@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://www.ualberta.ca/computing-science/index.html'>Department of Computing Science</a>, <a href='https://www.ualberta.ca/index.html'>University of Alberta <br> <a href='https://www.amii.ca/'>Alberta Machine Intelligence Institute (Amii)</a> <br> <a href='https://cifar.ca/'>CIFAR AI Chair</a>
 
 profile:
   align: right
