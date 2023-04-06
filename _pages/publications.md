@@ -14,7 +14,6 @@ bibliography_types:
 <div class="publications">
 
 {% for type in page.bibliography_types %}
-  {% assign entries = site.bibliography | where: "entrytype", type.id%}
   <h2>{{ type.title }}</h2>
   {% bibliography -f papers -q @*[entrytype={{ type.id }}]* %}
 {% endfor %}
