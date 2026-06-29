@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+/*** Responsive layout that adapts to different screen sizes ***/
+@media screen and (min-width: 32em) {
+  html {
+    font-size: 16px;
+  }
+  h1, .h1 {
+    font-size: 2.998rem;
+  }
+  .site-header {
+    text-align: left;
+  }
+  .site-nav {
+    margin-top: 0;
+  }
+  .site-header a {
+    font-size: 1rem;
+  }
+  .site-header .site-title {
+    font-size: 1.25rem; float: left;
+  }
+  .site-header .site-nav {
+    float: right;
+  }
+  blockquote {
+    margin-left: 2rem; padding: 2rem;
+  }
+  .img_row {
+    height: 91.6666666667px;
+  }
+  .col {
+    padding: 1.6666666667px;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
+  .img_row {
+    height: 183.3333333333px;
+  }
+  .col {
+    padding: 3.3333333333px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  html {
+    font-size: 20px;
+  }
+  .img_row {
+    height: 275px;
+  }
+  .col {
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 78em) {
+  em img {
+    max-width: 56rem; margin-left: -7em;
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+.site-nav label[for="nav-trigger"] {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav label[for="nav-trigger"] {
+    margin-bottom: 0px;
+  }
+}
+
+/*!
+
+  BASSCSS
+
+  Next-level CSS toolkit - basscss.com
+
+  Made with love by Jxnblk - ©2014 Brent Jackson
+  MIT License http://opensource.org/licenses/MIT
+
+*/
+
+/* Basscss Base Forms */
+body, button {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Basscss Base Typography */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 100%;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 900;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+p, dl, ol, ul {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol, ul {
+  padding-left: 2rem;
+}
+
+pre, code, samp {
+  font-family: "Source Code Pro", Consolas, monospace;
+  font-size: inherit;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow-x: scroll;
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1, .h1 {
+  font-size: 2.998rem;
+}
+
+/* Basscss Color Base */
+
+a:hover {
+  text-decoration: underline;
+}
+
+pre, code {
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+hr {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+}
+
+/* Basscss Utility Headings */
+
+@media (min-width: 52em) { .h00-responsive { font-size: 8vw; }
+  .h0-responsive { font-size: 6vw; }
+  .h1-responsive { font-size: 4vw; } }
+@media (min-width: 96em) { .h00-responsive { font-size: 7.68rem; }
+  .h0-responsive { font-size: 5.76rem; }
+  .h1-responsive { font-size: 3.84rem; } }
+/* Basscss Utility Typography */
+.bold { font-weight: bold; }
+
+.left-align { text-align: left; }
+
+.center { text-align: center; }
+
+.right-align { text-align: right; }
+
+.justify { text-align: justify; }
+
+.nowrap { white-space: nowrap; }
+
+html { margin-left: calc(100vw - 100%); margin-right: 0; }
+
+html, body { height: auto; min-height: 100%; -webkit-text-size-adjust: 100%; }
+
+img { max-width: none; }
+
+em img { max-width: 100%; margin-left: 0; }
+
+body { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+
+.wrapper {max-width: -webkit-calc(900px - (30px * 2));max-width: calc(900px - (30px * 2));margin-right: auto;margin-left: auto;padding-right: 30px;padding-left: 30px;}
+
+.clearfix:before, .wrapper:before, .clearfix:after, .wrapper:after { content: ' '; display: table; }
+
+.clearfix:after, .wrapper:after { clear: both; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.site-header { border-bottom: 1px solid #e8e8e8; background-color: #fff; opacity: 0.95; position: fixed; left: calc((100vw - 100%)/2); top: 0px; width: 100%; z-index: 50; }
+
+.site-title { font-size: 20px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; }
+
+.site-nav { float: right; line-height: 56px; }
+.site-nav .nav-trigger { display: none; }
+.site-nav .menu-icon { display: none; }
+.site-nav .al-folio-page-link { line-height: 1.5; }
+.site-nav .al-folio-page-link:not(:first-child) { margin-left: 10px; }
+@media screen and (max-width: 600px) { .site-nav { position: absolute; top: 9px; right: 15px; background-color: white; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; }
+  .site-nav label[for="nav-trigger"] { display: block; float: right; width: 36px; height: 36px; z-index: 2; cursor: pointer; }
+  .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; }
+  .site-nav .al-folio-page-link { display: block; padding: 5px 10px; margin-left: 10px; }
+  .site-nav .al-folio-page-link:not(:last-child) { margin-right: 0; } }
+
+.site { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; min-height: 100vh; }
+
+.site-wrap { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1 0 auto; flex: 1 0 auto; }
+
+.page-content { padding: 20px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ }
+
+.page-heading { font-size: 20px; }
+
+.center { text-align: center; }
+
+.post-list { margin: 0; padding: 0; list-style: none; }
+.post-list > li { border-bottom: 1px solid #ccc; padding-bottom: 2rem; padding-top: 2rem; }
+
+.post-title { font-size: 2.5rem; letter-spacing: -1px; line-height: 1; margin-bottom: 10px; margin-top: 2rem; font-weight: 700}
+
+.post-link { display: block; font-size: 42px; }
+
+.address {
+  font-family: monospace;
+}
+
+.address p {
+  margin: 0;
+  font-size: small;
+}
+
+.button-disabled { opacity: 0.55; background-color: #999; }
+
+.button-disabled:hover, .button-disabled:active, .button-disabled:focus { cursor: not-allowed; background-color: #999; }
+
+pre, pre code { background-color: transparent; border-radius: 0; }
+
+pre, code { font-family: "Source Code Pro", Consolas, monospace; }
+
+.highlight .p { font-size: 1.125rem; line-height: 1; }
+
+pre { counter-reset: line-numbering; white-space: pre; overflow-x: auto; word-break: inherit; word-wrap: inherit; }
+
+pre a { background-image: none; }
+
+pre a::before { content: counter(line-numbering); counter-increment: line-numbering; padding-right: 1em; /* space after numbers */ width: 25px; text-align: right; opacity: 0.7; display: inline-block; color: #ccc; margin-right: 16px; font-size: 13px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+pre a:first-of-type::before { padding-top: 10px; }
+
+pre a:last-of-type::before { padding-bottom: 10px; }
+
+pre a:only-of-type::before { padding: 10px; }
+
+figure > img { display: block; }
+
+.img_row { /*height: $img-height;*/ width: 100%; overflow: hidden; box-sizing: border-box; }
+
+.col { width: 100%; height: 100%; object-fit: cover; box-sizing: border-box; /*padding: $img-spacing;*/ }
+
+article a:hover, a:hover { text-decoration: underline; }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-weight: 100;
+}
+
+abbr {
+  border-bottom: 1px black dotted;
+  cursor: help;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+/*** Basscss Base Buttons ***/
+button, .button {
+  font-family: Helvetica,sans-serif;
+  font-size: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  line-height: 1.125rem;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  height: auto;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  -webkit-appearance: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+/*** Publications style ***/
+
+.bibliography li .hidden {
+  font-size: 0.875rem;
+  max-height: 0px;
+  overflow: hidden;
+  text-align: justify;
+  -webkit-transition: 0.15s ease;
+  -moz-transition: 0.15s ease;
+  -ms-transition: 0.15s ease;
+  -o-transition: 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.bibliography li .hidden.open {
+  max-height: 100em;
+  -webkit-transition: 0.15s ease;
+  -moz-transition: 0.15s ease;
+  -ms-transition: 0.15s ease;
+  -o-transition: 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.bibliography li {
+  margin: 10px 0;
+  position: relative;
+}
+
+.bibliography li span {
+  display: block;
+}
+
+.bibliography abbr {
+  position: absolute;
+  left: -7em;
+}
+
+ol.bibliography {
+  font-size: small;
+  list-style-type: none;
+}
+
+.spd-pub-group {
+  border-bottom: 1px solid #ccc;
+  color: #5A5A5A;
+  margin: 0px -1em 0px -1em;
+  padding-top: 1ex;
+  text-align: left;
+  font-size: 30px;
+  line-height: 1;
+}
+
+ol.bibliography > li > div > div.spd-bibentry-detail {
+  margin-top: 10pt;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-right-style: none;
+  border-width: thin;
+  font-size: small;
+  display: none;
+  line-height: normal;
+}
+
+ol.bibliography > li > div > div.spd-bibentry-bibtex {
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.btn-group-sm > .btn, .btn-sm {
+  padding: 0rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+
+div.btn-group > a.btn-outline-secondary.disabled {
+  color: #cccccc;
+}
+
+div.btn-group > a.btn-outline-secondary {
+  color: #6c757d;
+}
+
+.publications ol.bibliography li .abbr .my-badge-conf,.my-badge-conf {
+  font-weight: 600;
+  color: #fff;
+  background-color: #2980b9;
+  font-size: .6rem;
+  border-radius: .2rem;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 63px;
+  text-align: center;
+  padding: .15rem .15rem;
+}
+
+.publications ol.bibliography li .abbr .my-badge-journal,.my-badge-journal {
+  font-weight: 600;
+  color: #fff;
+  background-color: #c0392b;
+  font-size: .6rem;
+  border-radius: .2rem;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 63px;
+  text-align: center;
+  padding: .15rem .15rem;
+}
+
+.publications ol.bibliography li .abbr .my-badge-arxiv,.my-badge-arxiv {
+  font-weight: 600;
+  color: #fff;
+  background-color: #16a085;
+  font-size: .6rem;
+  border-radius: .2rem;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 63px;
+  text-align: center;
+  padding: .15rem .15rem;
+}
+
+.publications ol.bibliography li .abbr .my-badge-others,.my-badge-others {
+  font-weight: 600;
+  color: #fff;
+  background-color: #f39c12;
+  font-size: .6rem;
+  border-radius: .2rem;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 63px;
+  text-align: center;
+  padding: .15rem .15rem;
+}
