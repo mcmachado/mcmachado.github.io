@@ -15,6 +15,20 @@
   }
 }
 
+.photo-credit {
+    margin-bottom: 6px;
+    padding-left: 10px;
+    font-size: 0.68rem;
+    color: #b0b0b0;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+
+    p {
+        margin: 10;
+        margin-left: 4rem;
+    }
+}
+
 .profile.float-right {
   margin-left: 5rem;
 
