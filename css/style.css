@@ -1,4 +1,4 @@
-// Profile
+/* Profile */
 
 .profile {
   width: 100%;
@@ -13,6 +13,12 @@
       margin: 0;
     }
   }
+}
+
+/* Two-column lists (e.g. instruction team, lecture slides) inside .row */
+.column {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .photo-credit {
