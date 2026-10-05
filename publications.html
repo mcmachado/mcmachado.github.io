@@ -1535,6 +1535,64 @@ The recency heuristic in reinforcement learning is the assumption that stimuli t
   </div>
 <ol class="bibliography">
 
+<li><div id="lintunen2026mastering">
+  <div class="spd-bib-row">
+    <div class="col-sm-2 abbr"> <abbr class="my-badge-arxiv">arXiv-5</abbr> </div>
+    <div style="font-weight: 700!important; font-size: 32!important;">Mastering Atari 2600 Games with Discovered Options</div>
+    <div>E. M. Lintunen, and <em class="myself">M. C. Machado</em></div>
+    <div><em>CoRR</em> abs/2610.03604, 2026</div>
+  </div>
+  <div class="text-left">
+    <div class="btn-group btn-group-sm spd-bibentry-buttons" role="group">
+        <a href="https://arxiv.org/abs/2610.03604" title="arXiv" class="ai ai-arxiv btn btn-default btn-outline-secondary" role="button"></a>
+        <a href="" title="Cited by" class="ai ai-google-scholar btn btn-default btn-outline-secondary disabled"></a>
+        <a class="fa fa-book show-hide-bibentry btn btn-default btn-outline-secondary" role="button" title="Bib Entry (Show/Hide)"></a>
+        <a title="Abstract (Show/Hide)" class="fa fa-font show-hide-abstract btn btn-default btn-outline-secondary" role="button"></a>
+    </div>
+  </div>
+  <div class="spd-bibentry-detail spd-bibentry-bibtex">@article{lintunen2026mastering,
+  title = {Mastering Atari 2600 Games with Discovered Options},
+  author = {Erik M. Lintunen and Marlos C. Machado},
+  journal = {CoRR},
+  volume = {abs/2610.03604},
+  year = {2026}
+}
+</div>
+  <div class="spd-bibentry-detail spd-bibentry-abstract">
+Temporal abstractions, often instantiated as options, have long been regarded as a mechanism for accelerating credit assignment, facilitating exploration, and enabling generalisation in reinforcement learning (RL). However, developing general option discovery methods that are effective in large-scale, high-dimensional domains remains a fundamental challenge. Existing option discovery methods are either confined to relatively simple domains, depend on handcrafted or quasi-symbolic representations, or offer little improvement over learning without options. We present Wayfarer, a general, domain-agnostic, online deep RL agent that discovers options through Laplacian representation learning from high-dimensional observations and leverages them for control. We show that the resulting options simultaneously improve exploration, accelerate credit assignment, and generalise effectively to unseen settings, enabling substantially faster learning of complex policies. Wayfarer achieves state-of-the-art performance among single-stream agents on the most challenging Atari 2600 games, with the largest gains in games that require long-horizon exploration and strategic behaviour, such as Montezuma's Revenge and Private Eye.
+  </div>
+</div>
+</li>
+
+  <li><div id="dutenhefner2026learning">
+  <div class="spd-bib-row">
+    <div class="col-sm-2 abbr"> <abbr class="my-badge-arxiv">arXiv-4</abbr> </div>
+    <div style="font-weight: 700!important; font-size: 32!important;">Learning Multiple Timescales for Goal-Conditioned Reinforcement Learning</div>
+    <div>P. R. Dutenhefner, D. Shehmar, W. Meira Jr., and <em class="myself">M. C. Machado</em> </div>
+    <div><em>CoRR</em> abs/2610.00849, 2026</div>
+  </div>
+  <div class="text-left">
+    <div class="btn-group btn-group-sm spd-bibentry-buttons" role="group">
+        <a href="https://arxiv.org/abs/2610.00849" title="arXiv" class="ai ai-arxiv btn btn-default btn-outline-secondary" role="button"></a>
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xf_n4xUAAAAJ&sortby=pubdate&citation_for_view=xf_n4xUAAAAJ:BrmTIyaxlBUC" title="Cited by" class="ai ai-google-scholar btn btn-default btn-outline-secondary"></a>
+        <a class="fa fa-book show-hide-bibentry btn btn-default btn-outline-secondary" role="button" title="Bib Entry (Show/Hide)"></a>
+        <a title="Abstract (Show/Hide)" class="fa fa-font show-hide-abstract btn btn-default btn-outline-secondary" role="button"></a>
+    </div>
+  </div>
+  <div class="spd-bibentry-detail spd-bibentry-bibtex">@article{dutenhefner2026learning,
+  title = {Learning Multiple Timescales for Goal-Conditioned Reinforcement Learning},
+  author = {P. R. Dutenhefner and D. Shehmar and W. Meira Jr. and Marlos C. Machado},
+  journal = {CoRR},
+  volume = {abs/2610.00849},
+  year = {2026}
+}
+</div>
+  <div class="spd-bibentry-detail spd-bibentry-abstract">
+Existing approaches to offline goal-conditioned reinforcement learning (GCRL) struggle with long-horizon tasks. Discounting shrinks value differences between distant states until they fall below the function approximation error, leaving the agent with no signal for ranking states. Temporal abstraction, which treats k environment steps as a single transition, restores this signal at long range, but no single fixed k suits all state-goal distances: large k preserves value differences across long temporal distances while collapsing distinctions between nearby states, and small k does the reverse. We make this trade-off explicit and introduce Generalized Implicit Temporal Abstraction (GITA), which conditions a single value function on k. GITA trains one policy by aggregating advantage-weighted supervision across multiple k values, so scales assigning larger positive advantages to a state-goal pair contribute more strongly to its update. GITA does not need to choose between local resolution and long-range signal; it retains both without committing to a single k. On OGBench, GITA outperforms a broad range of offline GCRL baselines, raising average success rate across all tasks by 25 percentage points (73% relative improvement) over HIQL. It also improves over the strongest fixed-k method, OTA, by 7 percentage points (14% relative).
+  </div>
+</div>
+</li>
+
   <li><div id="lewandowski2026universal">
   <div class="spd-bib-row">
     <div class="col-sm-2 abbr"> <abbr class="my-badge-arxiv">arXiv-3</abbr> </div>
@@ -1545,7 +1603,7 @@ The recency heuristic in reinforcement learning is the assumption that stimuli t
   <div class="text-left">
     <div class="btn-group btn-group-sm spd-bibentry-buttons" role="group">
         <a href="https://arxiv.org/abs/2601.08061" title="arXiv" class="ai ai-arxiv btn btn-default btn-outline-secondary" role="button"></a>
-        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xf_n4xUAAAAJ&sortby=pubdate&authuser=2&citation_for_view=xf_n4xUAAAAJ:tOudhMTPpwUC" title="Cited by" class="ai ai-google-scholar btn btn-default btn-outline-secondary disabled"></a>
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xf_n4xUAAAAJ&sortby=pubdate&authuser=2&citation_for_view=xf_n4xUAAAAJ:tOudhMTPpwUC" title="Cited by" class="ai ai-google-scholar btn btn-default btn-outline-secondary"></a>
         <a class="fa fa-book show-hide-bibentry btn btn-default btn-outline-secondary" role="button" title="Bib Entry (Show/Hide)"></a>
         <a title="Abstract (Show/Hide)" class="fa fa-font show-hide-abstract btn btn-default btn-outline-secondary" role="button"></a>
     </div>
